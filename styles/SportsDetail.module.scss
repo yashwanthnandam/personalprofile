@@ -1,0 +1,218 @@
+.sportsPage {
+    padding-top: 76px; // Adjust based on your navbar height
+  }
+  
+  .pageHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/sports-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .pageTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .pageSubtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  .contentContainer {
+    padding: 60px 0;
+    
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid #eee;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: #28a745;
+    }
+  }
+  
+  .mainImage {
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .introText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  
+  .achievementsList {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      
+      &::before {
+        content: "🏅";
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+  
+  .medalGraphic {
+    width: 180px;
+    height: 180px;
+    background-color: #28a745;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .medalCount {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .medalText {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  
+  .positionCard {
+    height: 100%;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .positionTitle {
+    font-weight: 700;
+    color: #28a745;
+    margin-bottom: 5px;
+  }
+  
+  .positionOrg {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .positionPeriod {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .responsibilitiesTitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .responsibilitiesList {
+    list-style-type: disc;
+    padding-left: 20px;
+    
+    li {
+      margin-bottom: 5px;
+    }
+  }
+  
+  .momentImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quoteContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .quote {
+    position: relative;
+    
+    blockquote {
+      font-style: italic;
+      border-left: 3px solid #28a745;
+      padding-left: 15px;
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+    
+    .quoteContext {
+      font-size: 0.9rem;
+      color: #777;
+      text-align: right;
+    }
+  }
+  
+  .impactText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    
+    p {
+      margin-bottom: 1.2rem;
+    }
+  }
+  
+  .gallerySection {
+    margin-top: 20px;
+  }
+  
+  .galleryItem {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .galleryImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }

@@ -1,0 +1,70 @@
+.skillsSection {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .underline {
+    height: 4px;
+    width: 70px;
+    background-color: #0d6efd;
+    margin: 0 auto 3rem auto;
+    border-radius: 2px;
+  }
+  
+  .skillCard {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .categoryTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+    color: #0d6efd;
+  }
+  
+  .skillList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    li {
+      margin-bottom: 5px;
+    }
+  }
+  
+  .skillBadge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+      background-color: rgba(13, 110, 253, 0.2);
+    }
+  }

@@ -1,0 +1,84 @@
+/* Add this to your existing CareerDetailPage.module.scss */
+
+/* Updated Skill Tags */
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skillTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 15px;
+  background-color: rgba(13, 110, 253, 0.08);
+  color: #0d6efd;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(13, 110, 253, 0.2);
+  
+  &:hover {
+    background-color: rgba(13, 110, 253, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* Add tech-specific styling */
+  &.golang {
+    background-color: rgba(32, 156, 238, 0.08);
+    color: #209cee;
+    border-color: rgba(32, 156, 238, 0.2);
+  }
+  
+  &.aws {
+    background-color: rgba(255, 153, 0, 0.08);
+    color: #ff9900;
+    border-color: rgba(255, 153, 0, 0.2);
+  }
+  
+  &.docker {
+    background-color: rgba(34, 103, 163, 0.08);
+    color: #2267a3;
+    border-color: rgba(34, 103, 163, 0.2);
+  }
+  
+  &.kubernetes {
+    background-color: rgba(51, 102, 204, 0.08);
+    color: #3366cc;
+    border-color: rgba(51, 102, 204, 0.2);
+  }
+  
+  &.microservices {
+    background-color: rgba(102, 51, 153, 0.08);
+    color: #663399;
+    border-color: rgba(102, 51, 153, 0.2);
+  }
+  
+  &.database {
+    background-color: rgba(0, 128, 0, 0.08);
+    color: #008000;
+    border-color: rgba(0, 128, 0, 0.2);
+  }
+}
+
+/* Optional icon for skill tags */
+.skillIcon {
+  margin-right: 6px;
+  font-size: 0.9rem;
+}
+
+/* Enhanced section for skills */
+.skillsSection {
+  margin-top: 20px;
+  border-top: 1px solid #eaeaea;
+  padding-top: 20px;
+}
+
+.skillsTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #555;
+}

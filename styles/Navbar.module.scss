@@ -1,0 +1,95 @@
+.navbar {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    
+    &.scrolled {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 0.5rem 0;
+      
+      .logo, .logoText {
+        color: #333;
+      }
+      
+      .navLink {
+        color: #333 !important;
+        
+        &:hover, &.active {
+          color: #0d6efd !important;
+        }
+      }
+    }
+    
+    /* Adding the nav-link styling inside a local class */
+    :global(.nav-link) {
+      color: #fff !important;
+      font-weight: 500;
+      padding: 0.5rem 1rem !important;
+      margin: 0 0.2rem;
+      transition: all 0.3s ease;
+      
+      &:hover, &.active {
+        color: #0d6efd !important;
+      }
+    }
+  }
+  
+  .logo {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .logoText {
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .navLink {
+    color: #fff !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.2rem;
+    transition: all 0.3s ease;
+    
+    &:hover, &.active {
+      color: #0d6efd !important;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .navbar {
+      &.scrolled {
+        :global(.navbar-toggler) {
+          color: #333;
+          border-color: #333;
+        }
+      }
+    
+      :global(.navbar-collapse) {
+        background-color: #fff;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        
+        .navLink {
+          color: #333 !important;
+          
+          &:hover, &.active {
+            color: #0d6efd !important;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .logoText {
+      display: none;
+    }
+  }

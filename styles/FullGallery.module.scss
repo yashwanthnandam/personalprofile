@@ -1,0 +1,124 @@
+.galleryPage {
+    padding-top: 76px; // Adjust based on your navbar height
+  }
+  
+  .pageHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/gallery-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .pageTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .pageSubtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  .contentContainer {
+    padding: 60px 0;
+  }
+  
+  .galleryNav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+    .navLink {
+      margin: 0 15px;
+      padding: 10px 20px;
+      font-weight: 600;
+      color: #555;
+      transition: all 0.3s ease;
+      border: none;
+      
+      &:hover {
+        color: #0d6efd;
+      }
+      
+      &.active {
+        color: #0d6efd;
+        border-bottom: 2px solid #0d6efd;
+      }
+    }
+  }
+  
+  .galleryGrid {
+    margin-bottom: 30px;
+  }
+  
+  .galleryItem {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+      .imageCaption {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .galleryImage {
+        transform: scale(1.05);
+      }
+    }
+  }
+  
+  .galleryImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+  }
+  
+  .imageCaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .videoItem {
+    margin-bottom: 30px;
+  }
+  
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .videoFrame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .videoTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
